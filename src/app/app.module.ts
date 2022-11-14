@@ -7,7 +7,8 @@ import { NamegameHeaderComponent } from './namegame-header/namegame-header.compo
 import { NamegameMainPageComponent } from './namegame-main-page/namegame-main-page.component';
 import { NamegameTitleComponent } from './namegame-title/namegame-title.component';
 import { NamegameCardsComponent } from './namegame-cards/namegame-cards.component';
-import { NamegameCardComponent } from './namegame-card/namegame-card.component';
+import { NamegameCardContainerComponent } from './namegame-card-container/namegame-card-container.component';
+import { NamegameCardTriviaComponent } from './namegame-card-trivia/namegame-card-trivia.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NamegameCardComponent } from './namegame-card/namegame-card.component';
     NamegameMainPageComponent,
     NamegameTitleComponent,
     NamegameCardsComponent,
-    NamegameCardComponent
+    NamegameCardContainerComponent,
+    NamegameCardTriviaComponent
   ],
   imports: [
     BrowserModule,
