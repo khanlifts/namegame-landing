@@ -1,14 +1,28 @@
 .namegame-cards
   display: flex
+  @media (max-width: 800px)
+    flex-direction: column
+    align-items: center
+
   &__left-card
     margin-right: 65px
+    transform: rotate(-5deg)
+    @media (max-width: 800px)
+      margin-right: initial
+      transform: initial
+
+  &__right-card
+    transform: rotate(5deg)
+    @media (max-width: 800px)
+      margin-top: 80px
+      transform: initial
 
   &__left-image
     max-width: 269px
     max-height: 247px
     padding: 17px 15px 0 10px
 
-  &__left-subtitle
+  &__title
     font-family: 'Poppins', sans-serif
     font-weight: 600
     font-size: 29px
