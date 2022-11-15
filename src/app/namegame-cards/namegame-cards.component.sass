@@ -13,9 +13,15 @@
 
   &__right-card
     transform: rotate(5deg)
+    position: relative
     @media (max-width: 800px)
       margin-top: 80px
       transform: initial
+
+  &__pointer
+    position: absolute
+    bottom: 80px
+    right: 20px
 
   &__left-image
     max-width: 269px

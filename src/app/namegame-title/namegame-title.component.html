@@ -1,5 +1,7 @@
 <div class="namegame-title">
-  <h1 class="namegame-title__main-title">Remote and fun team quizzes.</h1>
-  <div class="namegame-title__subtitle">Combine fun watercooler chats with trivia company learning.</div>
-  <button class="namegame-title__action-button">Try Now!</button>
+  <h1 class="namegame-title__main-title">{{ title }}</h1>
+  <div class="namegame-title__subtitle">{{ subTitle }}</div>
+  <button class="namegame-title__action-button"
+    [class.namegame-title__action-button--blue]="buttonType === 'blue'"
+    [class.namegame-title__action-button--orange]="buttonType === 'orange'">{{ buttonTitle }}</button>
 </div>

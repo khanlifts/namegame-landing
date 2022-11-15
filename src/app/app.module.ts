@@ -9,6 +9,7 @@ import { NamegameTitleComponent } from './namegame-title/namegame-title.componen
 import { NamegameCardsComponent } from './namegame-cards/namegame-cards.component';
 import { NamegameCardContainerComponent } from './namegame-card-container/namegame-card-container.component';
 import { NamegameCardTriviaComponent } from './namegame-card-trivia/namegame-card-trivia.component';
+import { NamegameCoworkersPageComponent } from './namegame-coworkers-page/namegame-coworkers-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NamegameCardTriviaComponent } from './namegame-card-trivia/namegame-car
     NamegameTitleComponent,
     NamegameCardsComponent,
     NamegameCardContainerComponent,
-    NamegameCardTriviaComponent
+    NamegameCardTriviaComponent,
+    NamegameCoworkersPageComponent
   ],
   imports: [
     BrowserModule,
