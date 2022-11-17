@@ -1,0 +1,49 @@
+.namegame-trivia-page
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%)
+  min-height: 800px
+
+  &__content
+    padding-left: 107px
+    display: flex
+    align-items: center
+    min-height: 800px
+
+    @media (max-width: 1315px)
+      flex-direction: column-reverse
+      padding: 60px 40px 0 40px
+
+  &__title
+    margin-right: 85px
+    @media (max-width: 1315px)
+      margin-bottom: 80px
+      margin-right: initial
+
+  &__cards
+    display: flex
+    align-items: center
+    @media (max-width: 1315px)
+      padding-bottom: 80px
+      justify-content: center
+    @media (max-width: 800px)
+      flex-direction: column
+
+  &__question-image
+    min-width: 294px
+    min-height: 348px
+    background: #FFFFFF
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25)
+    border-radius: 15px
+
+  &__answer-image
+    height: 294px
+    background: #FFFFFF
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25)
+    border-radius: 15px
+
+  &__arrow
+    margin: 0 25px
+    @media (max-width: 800px)
+      margin: 60px 25px
+      transform: rotate(90deg)
+      height: 25px
+

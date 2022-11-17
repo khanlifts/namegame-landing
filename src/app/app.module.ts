@@ -10,6 +10,7 @@ import { NamegameCardsComponent } from './namegame-cards/namegame-cards.componen
 import { NamegameCardContainerComponent } from './namegame-card-container/namegame-card-container.component';
 import { NamegameCardTriviaComponent } from './namegame-card-trivia/namegame-card-trivia.component';
 import { NamegameCoworkersPageComponent } from './namegame-coworkers-page/namegame-coworkers-page.component';
+import { NamegameTriviaPageComponent } from './namegame-trivia-page/namegame-trivia-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NamegameCoworkersPageComponent } from './namegame-coworkers-page/namega
     NamegameCardsComponent,
     NamegameCardContainerComponent,
     NamegameCardTriviaComponent,
-    NamegameCoworkersPageComponent
+    NamegameCoworkersPageComponent,
+    NamegameTriviaPageComponent
   ],
   imports: [
     BrowserModule,
