@@ -1,0 +1,8 @@
+<div class="namegame-form">
+  <input class="namegame-form__input" id="email" type="email" [formControl]="emailField">
+  <button class="namegame-form__action-button namegame-form__action-button--blue"
+          [class.namegame-form__action-button--disabled]="emailField.invalid"
+   [disabled]="emailField.invalid"
+   (click)="onSubmitClick()"
+  >Sign Up Now</button>
+</div>

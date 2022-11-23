@@ -1,0 +1,32 @@
+.namegame-form
+  margin-top: 40px
+  border: 1px solid #217BF4
+  border-radius: 12px
+  display: flex
+  justify-content: space-between
+  max-width: 428px
+
+  &__input
+    padding: 15px 10px
+    font-size: 20px
+    border: none
+    border-radius: 10px 0 0 10px
+    outline: none
+    width: calc(100% - 152px)
+    @media (max-width: 500px)
+      font-size: 15px
+
+  &__action-button
+    border: none
+    box-shadow: 0 9px 27px -7px rgba(33, 123, 244, 0.34)
+    border-radius: 0 10px 10px 0
+    font-weight: 600
+    font-size: 14px
+    line-height: 14px
+    padding: 22px
+    cursor: pointer
+    &--blue
+      background: #056cf3
+      color: white
+    &--disabled
+      cursor: initial

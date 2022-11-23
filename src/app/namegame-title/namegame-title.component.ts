@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-namegame-title',
@@ -10,4 +10,13 @@ export class NamegameTitleComponent {
   @Input() subTitle = ''
   @Input() buttonTitle = ''
   @Input() buttonType = 'orange'
+  @Input() buttonLink = 'more-info'
+  @Input() enableForm = false
+  @Output() isFormSubmitted = new EventEmitter<boolean>();
+  public submitted = false;
+
+  onSubmitClick(): void {
+    this.submitted = true;
+    this.isFormSubmitted.emit(this.submitted)
+  }
 }

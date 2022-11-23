@@ -12,6 +12,10 @@ import { NamegameCardTriviaComponent } from './namegame-card-trivia/namegame-car
 import { NamegameCoworkersPageComponent } from './namegame-coworkers-page/namegame-coworkers-page.component';
 import { NamegameTriviaPageComponent } from './namegame-trivia-page/namegame-trivia-page.component';
 import { NamegameFooterComponent } from './namegame-footer/namegame-footer.component';
+import { NamegameMoreInfoComponent } from './namegame-more-info-page/namegame-more-info.component';
+import { LandingParentComponentComponent } from './landing-parent-component/landing-parent-component.component';
+import { NamegameFormComponent } from './namegame-form/namegame-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +28,15 @@ import { NamegameFooterComponent } from './namegame-footer/namegame-footer.compo
     NamegameCardTriviaComponent,
     NamegameCoworkersPageComponent,
     NamegameTriviaPageComponent,
-    NamegameFooterComponent
+    NamegameFooterComponent,
+    NamegameMoreInfoComponent,
+    LandingParentComponentComponent,
+    NamegameFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

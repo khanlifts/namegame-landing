@@ -1,7 +1,26 @@
-<div class="namegame-title">
-  <h1 class="namegame-title__main-title">{{ title }}</h1>
-  <div class="namegame-title__subtitle">{{ subTitle }}</div>
-  <button class="namegame-title__action-button"
-    [class.namegame-title__action-button--blue]="buttonType === 'blue'"
-    [class.namegame-title__action-button--orange]="buttonType === 'orange'">{{ buttonTitle }}</button>
+<div class="namegame-title" [class.namegame-title--right-margin]="submitted">
+  <ng-container *ngIf="!submitted; else successMessage">
+    <h1 class="namegame-title__main-title">{{ title }}</h1>
+    <div class="namegame-title__subtitle">{{ subTitle }}</div>
+    <button class="namegame-title__action-button" *ngIf="buttonTitle"
+      [routerLink]="buttonLink"
+      [class.namegame-title__action-button--blue]="buttonType === 'blue'"
+      [class.namegame-title__action-button--orange]="buttonType === 'orange'">
+      {{ buttonTitle }}
+    </button>
+
+    <ng-container *ngIf="enableForm">
+      <app-namegame-form
+        (submitClick)="onSubmitClick()"
+      ></app-namegame-form>
+    </ng-container>
+  </ng-container>
 </div>
+
+<ng-template #successMessage>
+  <h1 class="namegame-title__main-title namegame-title__success-title">Thanks a lot</h1>
+  <div class="namegame-title__subtitle">We will get back to you in the next 72 hours.</div>
+  <div class="namegame-title__success-icon-wrapper">
+    <img src="assets/images/tada.svg" alt="party popper icon">
+  </div>
+</ng-template>
