@@ -1,0 +1,41 @@
+.namegame-footer
+  height: 90px
+  background: #20202D
+  padding: 0 107px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  @media (max-width: 660px)
+    flex-direction: column-reverse
+    padding: 24px
+    height: initial
+    &__logo
+      order: 1
+      margin-bottom: 16px
+    &__info-item
+      margin-bottom: 16px
+
+  &__info
+    color: white
+    font-size: 14px
+    font-family: 'Inter', sans-serif
+
+  &__info-item
+    line-height: 20px
+
+  &__logo
+    display: flex
+    align-items: center
+    cursor: pointer
+
+  &__logo-image
+    margin-right: 6px
+
+  &__logo-title
+    font-family: 'Poppins', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 24px
+    color: white

@@ -11,6 +11,7 @@ import { NamegameCardContainerComponent } from './namegame-card-container/namega
 import { NamegameCardTriviaComponent } from './namegame-card-trivia/namegame-card-trivia.component';
 import { NamegameCoworkersPageComponent } from './namegame-coworkers-page/namegame-coworkers-page.component';
 import { NamegameTriviaPageComponent } from './namegame-trivia-page/namegame-trivia-page.component';
+import { NamegameFooterComponent } from './namegame-footer/namegame-footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NamegameTriviaPageComponent } from './namegame-trivia-page/namegame-tri
     NamegameCardContainerComponent,
     NamegameCardTriviaComponent,
     NamegameCoworkersPageComponent,
-    NamegameTriviaPageComponent
+    NamegameTriviaPageComponent,
+    NamegameFooterComponent
   ],
   imports: [
     BrowserModule,
