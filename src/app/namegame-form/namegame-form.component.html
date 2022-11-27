@@ -1,4 +1,5 @@
-<div class="namegame-form">
+<div class="namegame-form"
+     [class.namegame-form--invalid]="!emailField.pristine && emailField.invalid">
   <input class="namegame-form__input" id="email" type="email" [formControl]="emailField">
   <button class="namegame-form__action-button namegame-form__action-button--blue"
           [class.namegame-form__action-button--disabled]="emailField.invalid"

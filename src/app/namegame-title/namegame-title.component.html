@@ -11,7 +11,7 @@
 
     <ng-container *ngIf="enableForm">
       <app-namegame-form
-        (submitClick)="onSubmitClick()"
+        (submitClick)="onSubmitClick($event)"
       ></app-namegame-form>
     </ng-container>
   </ng-container>

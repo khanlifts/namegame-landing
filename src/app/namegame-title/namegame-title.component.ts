@@ -12,11 +12,11 @@ export class NamegameTitleComponent {
   @Input() buttonType = 'orange'
   @Input() buttonLink = 'more-info'
   @Input() enableForm = false
-  @Output() isFormSubmitted = new EventEmitter<boolean>();
+  @Output() submittedEmail = new EventEmitter<string>();
   public submitted = false;
 
-  onSubmitClick(): void {
+  onSubmitClick(email: string): void {
     this.submitted = true;
-    this.isFormSubmitted.emit(this.submitted)
+    this.submittedEmail.emit(email)
   }
 }

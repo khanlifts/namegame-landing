@@ -2,11 +2,11 @@
   <app-namegame-header></app-namegame-header>
   <div class="namegame-more-info-page__content">
     <app-namegame-title class="namegame-more-info-page__title"
-      [class.namegame-more-info-page__title--submitted]="isFormSubmitted"
+      [class.namegame-more-info-page__title--submitted]="submittedEmail"
       [title]="'You caught us early.'"
       [subTitle]="'Get notified to be among the first to play.'"
       [enableForm]="true"
-      (isFormSubmitted)="onSubmittedForm($event)">
+      (submittedEmail)="sendEmail($event)">
     </app-namegame-title>
     <app-namegame-cards class="namegame-more-info-page__cards"></app-namegame-cards>
   </div>
