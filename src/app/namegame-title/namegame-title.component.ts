@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { SignUpFormValue } from '../namegame-form/namegame-form.component';
 
 @Component({
   selector: 'app-namegame-title',
@@ -12,11 +13,11 @@ export class NamegameTitleComponent {
   @Input() buttonType = 'orange'
   @Input() buttonLink = 'more-info'
   @Input() enableForm = false
-  @Output() submittedEmail = new EventEmitter<string>();
+  @Output() submittedFormValue = new EventEmitter<SignUpFormValue>();
   public submitted = false;
 
-  onSubmitClick(email: string): void {
+  onSubmitClick(signupFormValue: SignUpFormValue): void {
     this.submitted = true;
-    this.submittedEmail.emit(email)
+    this.submittedFormValue.emit(signupFormValue)
   }
 }
