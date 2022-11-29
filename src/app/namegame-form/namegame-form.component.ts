@@ -18,7 +18,7 @@ export class NamegameFormComponent {
 
   onSubmitClick(): void {
     if (this.emailField.value && this.nameField.value) {
-      this.submitClick.emit({ name: this.emailField.value, email: this.nameField.value });
+      this.submitClick.emit({ email: this.emailField.value, name: this.nameField.value });
     }
   }
 }
